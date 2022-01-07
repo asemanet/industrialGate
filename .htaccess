@@ -1,0 +1,14 @@
+options -indexes
+ RewriteEngine On
+php_value short_open_tag 1
+
+# force https:// for all except some selected URLs
+#RewriteCond %{HTTPS} off
+#RewriteCond %{THE_REQUEST} !/webservice/ [NC]
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+ RewriteBase /
+ RewriteCond %{REQUEST_URI} !\.(jpg|png|css|js|min|map|json|md|woff|less|woff2|woff2:1|svg)$
+ RewriteRule .* index.php [L]
+

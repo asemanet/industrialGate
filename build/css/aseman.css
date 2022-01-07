@@ -1,0 +1,487 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('/build/fonts/iransans/IRANSansWeb_Bold.eot');
+    src: url('/build/fonts/iransans/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('/build/fonts/iransans/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('/build/fonts/iransans/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/build/fonts/iransans/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('/build/fonts/iransans/IRANSansWeb_Medium.eot');
+    src: url('/build/fonts/iransans/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('/build/fonts/iransans/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('/build/fonts/iransans/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/build/fonts/iransans/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('/build/fonts/iransans/IRANSansWeb_Light.eot');
+    src: url('/build/fonts/iransans/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('/build/fonts/iransans/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('/build/fonts/iransans/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/build/fonts/iransans/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('/build/fonts/iransans/IRANSansWeb_UltraLight.eot');
+    src: url('/build/fonts/iransans/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('/build/fonts/iransans/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('/build/fonts/iransans/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/build/fonts/iransans/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('/build/fonts/iransans/IRANSansWeb.eot');
+    src: url('/build/fonts/iransans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+    url('/build/fonts/iransans/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+    url('/build/fonts/iransans/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/build/fonts/iransans/IRANSansWeb.ttf') format('truetype');
+}
+
+#banner a {
+    position:fixed;
+    display:block;
+    left:10px;
+    bottom:1px;
+    width:180px;
+    height:180px;
+    background:url('https://cdn.iwmf.ir/images/people-votes/2-2.png') transparent no-repeat scroll center center;
+}
+
+.c-footer__jumpup-container {
+    cursor: pointer;
+    width: 105%;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 57px;
+    background-color: #f7f7f7;
+}
+.c-footer__jumpup {
+    font-size: 20pt;
+    line-height: 1.1;
+    color:
+            #4a4a4a;
+    position: absolute;
+    height: 59px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color:
+            #f5f5f5;
+    border-top: 1px solid
+    #eceff1;
+    border-bottom: 1px solid
+    #cfd8dc;
+}
+.c-footer {
+    /*margin-top: 50px;*/
+    padding: 80px 10px 10px;
+    background:
+            #eceff1;
+    position: relative;
+    line-height: 22px;
+    overflow: hidden;
+}
+.c-footer__jumpup-angle::before {
+    /*content: "\E0B6\00FE0E";*/
+    color:
+            #fff;
+}
+.zoom {
+    /*padding: 50px;*/
+    /*background-color: green;*/
+    transition: transform .2s; /* Animation */
+    /*width: 200px;*/
+    /*height: 200px;*/
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.plaque {
+    position: relative;
+    background-image: url(http://shamsabad.org/build/images/national-plaque-null.png);
+    background-size: 280px 65px;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 65px;
+    font-size: 10pt;
+}
+
+
+.plaque #PLAQUE_PART3 {
+    position: absolute;
+    right: 70px;
+    top: 20px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+
+}
+
+.plaque #PLAQUE_PART2 {
+    position: absolute;
+    right: 125px;
+    top: 20px;
+    width: 90px;
+    height: 30px;
+    font-size: 11pt;
+    text-align: center;
+
+}
+.plaque #PLAQUE_PART1 {
+    position: absolute;
+    right: 217px;
+    top: 20px;
+    width: 32px;
+    height: 30px;
+    text-align: center;
+
+
+}
+.plaque #PLAQUE_PART4 {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+
+
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: rgb(81,89,91);
+    /*height: 100px;*/
+}
+
+footer a {
+    color: #333;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+    border-radius: 1px;
+    border-color: #2f2f2f;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+hr.style1{
+    border-top: 1px solid #cfd8dc;
+}
+
+
+
+.service-header {
+    text-align: center;
+    padding: 20px 10% 30px !important;
+    margin: 0 auto;
+}
+.service-container {
+    /*padding-top: 60px;*/
+    transition: all 1s;
+}
+.service-header {
+    text-align: right;
+    padding: 0 0 0 !important;
+    margin: 0 auto;
+}
+.service-aseman {
+    font-family: "IRANSans";
+}
+.service-header .icon svg, .service-header .photography, .service-header .service-item {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+}
+.service-title {
+    text-align: right;
+    font-size: 10pt;
+    font-weight: 700;
+    padding: 30px 110px 0 0;
+    position: relative;
+    z-index: 3;
+    margin: 0 ;
+}
+.service-header .photography, .service-header .service-item {
+    border: 2px solid #333;
+    background-color:
+            #333 !important;
+    border-radius: 50%;
+    padding: 6px;
+    float: right;
+}
+.service-motto {
+    letter-spacing: normal;
+    font-size: 12pt;
+    font-weight: 600;
+    color:
+            #333;
+    text-align: right;
+    direction: rtl;
+    padding: 30px 10px 0 0;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+.content-service {
+    text-align: justify;
+    direction: rtl;
+    font-size: 8pt;
+    margin: 20px 0;
+    line-height: 25px;
+    padding: 0 10px 0 0;
+
+}
+
+.service-title::after {
+
+    background: #69FF47;
+
+}
+.service-title::after {
+
+    position: absolute;
+    width: 2px;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    background: #69FF47;
+    top: 40%;
+
+}
+.service-body .title::after, .service-title::after {
+
+    content: '';
+    z-index: 1;
+    margin-left: -20px;
+
+}
+::after, ::before {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.scrollToTop{
+    width:100px;
+    height:130px;
+    padding:10px;
+    text-align:center;
+    /*background: whiteSmoke;*/
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    top:75px;
+    right:40px;
+    display:none;
+    /*background: url('arrow_up.png') no-repeat 0px 20px;*/
+}
+.scrollToTop:hover{
+    /*text-decoration:none;*/
+}
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 23px;
+    color: #f8f8f8;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #595959;
+}
+
+input:focus {
+    border: 2px solid #bfdeff;
+    border-radius: .25rem;
+}
+
+select:focus {
+    border: 2px solid #bfdeff;
+    border-radius: .25rem;
+}
+.aseman-ltr
+{
+   direction:ltr;
+}
+.aseman-small-font
+{
+    font-size: 8pt;
+}
+
+.aseman-full-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .aseman-login-small {
+        /*display: none !important;*/
+        background-color: #eeeeee;
+        animation-name: fadeInRight;
+    }
+}
+
+@media (min-width: 767px) {
+    .aseman-login-large {
+        /*display: none !important;*/
+        background-color: rgba(255, 255, 255, .8);
+        animation-name: fadeInRight;
+
+    }
+}
+fr {
+    display: block;
+    /*margin-top: 0.5em;*/
+    /*margin-bottom: 0.5em;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inherit;
+    border-width: 2px 0px 0px 0px;
+}
+.ticket-title {
+    font-weight:bold;
+    font-size:20px;
+    margin-left:10px;
+}
+.answered {
+    font-size:10px;
+    color:#ffffff;
+    background-color:#7079d6;
+    margin:0px 0px 0px 5px;
+}
+.ticket-offset-right {
+    margin-right: 100px ;
+    direction: ltr;
+}
+.ticket-offset-left {
+    margin-left: 100px ;
+    margin-right: 20px ;
+}
+.info-number-message {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    padding: 2px 6px;
+    position: relative;
+    right: 8px;
+    bottom: 10px;
+}
